@@ -1,7 +1,7 @@
 import os
 import logging
 from logging.handlers import RotatingFileHandler
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 import pandas as pd
 from flask_httpauth import HTTPBasicAuth
 from CatBoostModel import KuryeNetML
@@ -13,8 +13,8 @@ app = Flask(__name__)
 # Loglama için temel yapılandırmayı ayarla
 logging.basicConfig(level=logging.INFO)
 
-# Rotating log dosyaları oluştur, 1MB'da bir yeni dosya oluştur ve en fazla 10 dosya sakla
-file_handler = RotatingFileHandler('KuryeNetApp.log', maxBytes=1024 * 1024, backupCount=10)
+# Rotating log dosyaları oluştur, 10MB'da bir yeni dosya oluştur ve en fazla 10 dosya sakla
+file_handler = RotatingFileHandler('KuryeNetApp.log', maxBytes=80000 * 80000, backupCount=10)
 file_handler.setLevel(logging.INFO)  # INFO ve üzeri seviyedeki logları yakala
 
 # Log mesajları için bir format belirle
@@ -38,6 +38,12 @@ def verify_password(username, password):
         app.logger.error(f"Method: verify_password, Username: {username}, Password: {password}, Basic Auth failed.")
         return False
 
+
+@app.route('/logs')
+@auth.login_required
+def show_logs():
+    log_file_path = 'KuryeNetApp.log'
+    return send_file(log_file_path, as_attachment=True)
 
 @app.route('/predict', methods=['POST'])
 @auth.login_required
