@@ -9,7 +9,6 @@ from datetime import datetime
 from pytz import timezone
 
 
-
 app = Flask(__name__)
 
 tz = timezone('Europe/Istanbul') # UTC, Asia/Shanghai, Europe/Berlin
