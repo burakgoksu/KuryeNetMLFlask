@@ -5,10 +5,19 @@ from flask import Flask, request, jsonify, send_file
 import pandas as pd
 from flask_httpauth import HTTPBasicAuth
 from CatBoostModel import KuryeNetML
+from datetime import datetime
+from pytz import timezone
 
 
 
 app = Flask(__name__)
+
+tz = timezone('Europe/Istanbul') # UTC, Asia/Shanghai, Europe/Berlin
+
+def timetz(*args):
+    return datetime.now(tz).timetuple()
+
+logging.Formatter.converter = timetz
 
 # Loglama için temel yapılandırmayı ayarla
 logging.basicConfig(level=logging.INFO)
