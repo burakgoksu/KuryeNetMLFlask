@@ -39,7 +39,7 @@ def verify_password(username, password):
         return False
 
 
-@app.route('/logs')
+@app.route('/logs',methods=['GET'])
 @auth.login_required
 def show_logs():
     log_file_path = 'KuryeNetApp.log'
