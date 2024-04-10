@@ -6,9 +6,10 @@ import numpy as np
 
 class KuryeNetML:
 
-    def __init__(self,csvFile):
+    def __init__(self,csvFile,modelFile):
 
         self.csvFile = csvFile
+        self.modelFile = modelFile
 
         # Veri setini yükle
         df = pd.read_csv(csvFile)
@@ -58,12 +59,12 @@ class KuryeNetML:
         print(f"R^2: {r2}")
 
         # Modeli kaydet
-        cb_model.save_model('catboost_model2.cbm')
+        cb_model.save_model(self.modelFile)
 
     def Prediction(self,Delivery_Person_Age,Weather_Condition,Road_Traffic_Density,Type_Of_Order,Type_Of_Vehicle,Multiple_Deliveries,City,Distance,Day_Type,Time_Category):
         # Modeli yükle
         loaded_cb_model = CatBoostRegressor()
-        loaded_cb_model.load_model('catboost_model2.cbm')
+        loaded_cb_model.load_model(self.modelFile)
 
         # Yeni bir veri noktası oluştur
         new_data = {

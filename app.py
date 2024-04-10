@@ -34,7 +34,7 @@ app.logger.addHandler(file_handler)
 
 auth = HTTPBasicAuth()
 
-kuryeNetML = KuryeNetML('AllData.csv')
+kuryeNetML = KuryeNetML('KaggleData.csv','catboost_model.cbm')
 
 
 @auth.verify_password
@@ -120,7 +120,7 @@ def retrain_model():
             return jsonify({'error': 'KuryeNetData file does not exist.'})
 
         # İlk CSV dosyasını oku
-        df1 = pd.read_csv('KaggleData2.csv')
+        df1 = pd.read_csv('KaggleData.csv')
 
         # İkinci CSV dosyasını oku
         df2 = pd.read_csv('KuryeNetData.csv')
@@ -133,10 +133,11 @@ def retrain_model():
 
         kuryeNetML.TrainCatBoostModel()
 
-        app.logger.info(f"Method: retrain_model, Model: catboost_model2.cbm, Model has been retrained with All Data.")
-        return jsonify({'message': 'Model has been retrained with All Data.'})
+        app.logger.info(f"Method: retrain_model, Model: {kuryeNetML.modelFile}, Model has been retrained with {kuryeNetML.csvFile}.")
+        return jsonify({'message': 'Model: '+ kuryeNetML.modelFile+ ' has been retrained with ' + kuryeNetML.csvFile})
     except Exception as e:
-        app.logger.error(f"Method: retrain_model, Error: {str(e)}, Model has not been retrained with All Data.")
+        app.logger.error(f"Method: retrain_model, Error: {str(e)}, Model has not been retrained with {kuryeNetML.csvFile}.")
+
         return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
