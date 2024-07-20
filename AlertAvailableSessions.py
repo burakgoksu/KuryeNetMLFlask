@@ -81,7 +81,7 @@ class AlertAvailableSessions:
             content = file.read()
             entries = content.split('------------------------------------------------------------')
             for entry in entries:
-                if(entry.find("Dolu") > 0):
+                if(entry.find("Yer Var") > 0):
                     self.__sent_sessions_list.append(entry)
                     self.__sent_sessions_list.append("***************")
 
