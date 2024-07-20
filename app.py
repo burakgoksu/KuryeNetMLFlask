@@ -52,7 +52,6 @@ def verify_password(username, password):
         app.logger.error(f"Method: verify_password, Username: {username}, Password: {password}, Basic Auth failed.")
         return False
 
-
 @app.route('/available_sessions_logs', methods=['GET'])
 def show_available_sessions_logs():
     log_file_path = 'AlertAvailableSessions.log'
