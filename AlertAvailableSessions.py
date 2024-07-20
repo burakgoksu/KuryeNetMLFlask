@@ -150,7 +150,7 @@ class AlertAvailableSessions:
         self._running = True
         while self._running:
             self.sessions()
-            time.sleep(15)
+            time.sleep(120)
 
     def stop(self):
         self._running = False
