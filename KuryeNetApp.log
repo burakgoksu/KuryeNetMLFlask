@@ -88,3 +88,228 @@
 2024-04-10 04:00:01,172 - app - INFO - Method: write_data , Data: {'delivery_Person_Age': 24, 'order_Date': '2024-04-10', 'time_Ordered': '03:22:04', 'weather_Condition': 'Clear', 'road_Traffic_Density': 'Low', 'type_Of_Order': 'Meal', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 0, 'city': 'Metropolitan', 'time_Taken': 23, 'distance': 1418, 'day_Type': 'Holiday', 'time_Category': 'Night', 'restaurant_Latitude': 38.6159848, 'restaurant_Longitude': 27.425327, 'delivery_Location_Latitude': 38.67524146655394, 'delivery_Location_Longitude': 27.306219610565805}, Data was written successful on KuryeNetData.csv file.
 2024-04-10 04:01:33,578 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
 2024-04-10 04:01:33,580 - app - INFO - Method: write_data , Data: {'delivery_Person_Age': 24, 'order_Date': '2024-04-10', 'time_Ordered': '03:22:04', 'weather_Condition': 'Clear', 'road_Traffic_Density': 'Low', 'type_Of_Order': 'Meal', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 0, 'city': 'Metropolitan', 'time_Taken': 39, 'distance': 1418, 'day_Type': 'Holiday', 'time_Category': 'Night', 'restaurant_Latitude': 38.6159848, 'restaurant_Longitude': 27.425327, 'delivery_Location_Latitude': 38.67524146655394, 'delivery_Location_Longitude': 27.306219610565805}, Data was written successful on KuryeNetData.csv file.
+2024-05-22 23:55:29,318 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:14:43,264 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:14:43,333 - app - INFO - Method: predict, Data: {'Delivery_Person_Age': 24, 'Weather_Condition': 'Clear', 'Road_Traffic_Density': 'Low', 'Type_Of_Order': 'Meal', 'Type_Of_Vehicle': 'Motorcycle', 'Multiple_Deliveries': 0, 'City': 'Metropolitian', 'Distance': 12312312, 'Day_Type': 'Weekday', 'Time_Category': 'Night'}, Prediction Value: 19.579006919343943, Rounded: 20, Prediction request successful.
+2024-05-23 00:15:00,218 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:15:00,250 - app - INFO - Method: predict, Data: {'Delivery_Person_Age': 32, 'Weather_Condition': 'Clear', 'Road_Traffic_Density': 'Low', 'Type_Of_Order': 'Meal', 'Type_Of_Vehicle': 'Motorcycle', 'Multiple_Deliveries': 0, 'City': 'Metropolitian', 'Distance': 12312312, 'Day_Type': 'Weekday', 'Time_Category': 'Night'}, Prediction Value: 19.579006919343943, Rounded: 20, Prediction request successful.
+2024-05-23 00:15:03,772 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:15:03,811 - app - INFO - Method: predict, Data: {'Delivery_Person_Age': 11, 'Weather_Condition': 'Clear', 'Road_Traffic_Density': 'Low', 'Type_Of_Order': 'Meal', 'Type_Of_Vehicle': 'Motorcycle', 'Multiple_Deliveries': 0, 'City': 'Metropolitian', 'Distance': 12312312, 'Day_Type': 'Weekday', 'Time_Category': 'Night'}, Prediction Value: 19.579006919343943, Rounded: 20, Prediction request successful.
+2024-05-23 00:17:49,558 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:17:49,640 - app - ERROR - Method: retrain_model, Error: No columns to parse from file, Model has not been retrained with KaggleData.csv.
+2024-05-23 00:18:03,753 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:18:09,707 - app - INFO - Method: retrain_model, Model: catboost_model.cbm, Model has been retrained with KaggleData.csv.
+2024-05-23 00:18:21,021 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:18:21,047 - app - INFO - Method: predict, Data: {'Delivery_Person_Age': 32, 'Weather_Condition': 'Clear', 'Road_Traffic_Density': 'Low', 'Type_Of_Order': 'Meal', 'Type_Of_Vehicle': 'Motorcycle', 'Multiple_Deliveries': 0, 'City': 'Metropolitian', 'Distance': 12312312, 'Day_Type': 'Weekday', 'Time_Category': 'Night'}, Prediction Value: 19.579006919343943, Rounded: 20, Prediction request successful.
+2024-05-23 00:20:30,870 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:20:30,886 - app - INFO - Method: predict, Data: {'Delivery_Person_Age': 20, 'Weather_Condition': 'Windy', 'Road_Traffic_Density': 'High', 'Type_Of_Order': 'Snack', 'Type_Of_Vehicle': 'Scooter', 'Multiple_Deliveries': 0, 'City': 'Urban', 'Distance': 8156, 'Day_Type': 'Weekend', 'Time_Category': 'Noon'}, Prediction Value: 19.579006919343943, Rounded: 20, Prediction request successful.
+2024-05-23 00:21:22,146 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:21:22,146 - app - ERROR - Method: predict, Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'., Prediction request unsuccessful.
+2024-05-23 00:21:28,961 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:21:28,978 - app - INFO - Method: predict, Data: {'Delivery_Person_Age': 20, 'Weather_Condition': 'Windy', 'Road_Traffic_Density': 'High', 'Type_Of_Order': 'Snack', 'Type_Of_Vehicle': 'Scooter', 'Multiple_Deliveries': 0, 'City': 'Urban', 'Distance': 1233243224, 'Day_Type': 'Weekend', 'Time_Category': 'Noon'}, Prediction Value: 19.579006919343943, Rounded: 20, Prediction request successful.
+2024-05-23 00:21:32,456 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:21:32,481 - app - INFO - Method: predict, Data: {'Delivery_Person_Age': 20, 'Weather_Condition': 'Windy', 'Road_Traffic_Density': 'High', 'Type_Of_Order': 'Snack', 'Type_Of_Vehicle': 'Scooter', 'Multiple_Deliveries': 0, 'City': 'Urban', 'Distance': 8156, 'Day_Type': 'Weekend', 'Time_Category': 'Noon'}, Prediction Value: 19.579006919343943, Rounded: 20, Prediction request successful.
+2024-05-23 00:21:46,455 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:21:46,473 - app - INFO - Method: predict, Data: {'Delivery_Person_Age': 20, 'Weather_Condition': 'Windy', 'Road_Traffic_Density': 'Low', 'Type_Of_Order': 'Snack', 'Type_Of_Vehicle': 'Scooter', 'Multiple_Deliveries': 0, 'City': 'Urban', 'Distance': 4156, 'Day_Type': 'Weekday', 'Time_Category': 'Noon'}, Prediction Value: 19.579006919343943, Rounded: 20, Prediction request successful.
+2024-05-23 00:27:02,865 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:27:02,882 - app - INFO - Method: predict, Data: {'Delivery_Person_Age': 20, 'Weather_Condition': 'Windy', 'Road_Traffic_Density': 'Low', 'Type_Of_Order': 'Snack', 'Type_Of_Vehicle': 'Scooter', 'Multiple_Deliveries': 0, 'City': 'Urban', 'Distance': 4156, 'Day_Type': 'Weekday', 'Time_Category': 'Noon'}, Prediction Value: 19.579006919343943, Rounded: 20, Prediction request successful.
+2024-05-23 00:27:03,698 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:27:03,718 - app - INFO - Method: predict, Data: {'Delivery_Person_Age': 20, 'Weather_Condition': 'Windy', 'Road_Traffic_Density': 'Low', 'Type_Of_Order': 'Snack', 'Type_Of_Vehicle': 'Scooter', 'Multiple_Deliveries': 0, 'City': 'Urban', 'Distance': 4156, 'Day_Type': 'Weekday', 'Time_Category': 'Noon'}, Prediction Value: 19.579006919343943, Rounded: 20, Prediction request successful.
+2024-05-23 00:27:41,890 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:27:41,908 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 20, 'weather_Condition': 'Windy', 'road_Traffic_Density': 'Low', 'type_Of_Order': 'Snack', 'type_Of_Vehicle': 'Scooter', 'multiple_Deliveries': 0, 'city': 'Urban', 'distance': 4156, 'day_Type': 'Weekday', 'time_Category': 'Noon'}, Prediction Value: 14.420112216694532, Rounded: 14, Prediction request successful.
+2024-05-23 00:27:43,336 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:27:43,351 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 20, 'weather_Condition': 'Windy', 'road_Traffic_Density': 'Low', 'type_Of_Order': 'Snack', 'type_Of_Vehicle': 'Scooter', 'multiple_Deliveries': 0, 'city': 'Urban', 'distance': 4156, 'day_Type': 'Weekday', 'time_Category': 'Noon'}, Prediction Value: 14.420112216694532, Rounded: 14, Prediction request successful.
+2024-05-23 00:28:40,747 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:28:40,781 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 24, 'weather_Condition': 'Clear', 'road_Traffic_Density': 'Low', 'type_Of_Order': 'Meal', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 0, 'city': 'Metropolitian', 'distance': 421197, 'day_Type': 'Weekday', 'time_Category': 'Night'}, Prediction Value: 16.87987487836411, Rounded: 17, Prediction request successful.
+2024-05-23 00:28:44,719 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:28:44,740 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 24, 'weather_Condition': 'Clear', 'road_Traffic_Density': 'Low', 'type_Of_Order': 'Meal', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 0, 'city': 'Metropolitian', 'distance': 421197, 'day_Type': 'Weekday', 'time_Category': 'Night'}, Prediction Value: 16.87987487836411, Rounded: 17, Prediction request successful.
+2024-05-23 00:28:45,675 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:28:45,704 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 24, 'weather_Condition': 'Clear', 'road_Traffic_Density': 'Low', 'type_Of_Order': 'Meal', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 0, 'city': 'Metropolitian', 'distance': 421197, 'day_Type': 'Weekday', 'time_Category': 'Night'}, Prediction Value: 16.87987487836411, Rounded: 17, Prediction request successful.
+2024-05-23 00:28:48,536 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:28:48,558 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 24, 'weather_Condition': 'Clear', 'road_Traffic_Density': 'Low', 'type_Of_Order': 'Meal', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 0, 'city': 'Metropolitian', 'distance': 421197, 'day_Type': 'Weekday', 'time_Category': 'Night'}, Prediction Value: 16.87987487836411, Rounded: 17, Prediction request successful.
+2024-05-23 00:28:58,140 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:28:58,166 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 24, 'weather_Condition': 'Clear', 'road_Traffic_Density': 'Low', 'type_Of_Order': 'Meal', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 0, 'city': 'Metropolitian', 'distance': 4197, 'day_Type': 'Weekday', 'time_Category': 'Night'}, Prediction Value: 17.835895232738864, Rounded: 18, Prediction request successful.
+2024-05-23 00:29:05,020 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:29:05,042 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 24, 'weather_Condition': 'Clear', 'road_Traffic_Density': 'Low', 'type_Of_Order': 'Meal', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 0, 'city': 'Metropolitian', 'distance': 421197, 'day_Type': 'Weekday', 'time_Category': 'Night'}, Prediction Value: 16.87987487836411, Rounded: 17, Prediction request successful.
+2024-05-23 00:29:19,090 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:29:19,108 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 28, 'weather_Condition': 'Clear', 'road_Traffic_Density': 'Low', 'type_Of_Order': 'Meal', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 0, 'city': 'Metropolitian', 'distance': 421197, 'day_Type': 'Weekday', 'time_Category': 'Night'}, Prediction Value: 16.991246517354327, Rounded: 17, Prediction request successful.
+2024-05-23 00:29:25,795 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:29:25,821 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 28, 'weather_Condition': 'Clear', 'road_Traffic_Density': 'Low', 'type_Of_Order': 'Meal', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 0, 'city': 'Metropolitian', 'distance': 421197, 'day_Type': 'Weekday', 'time_Category': 'Noon'}, Prediction Value: 16.063796185971988, Rounded: 16, Prediction request successful.
+2024-05-23 00:29:58,132 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:29:58,146 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 28, 'weather_Condition': 'Clear', 'road_Traffic_Density': 'Low', 'type_Of_Order': 'Meal', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 0, 'city': 'Metropolitian', 'distance': 8500, 'day_Type': 'Weekday', 'time_Category': 'Noon'}, Prediction Value: 20.624000957253212, Rounded: 21, Prediction request successful.
+2024-05-23 00:30:37,160 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:30:37,174 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 28, 'weather_Condition': 'Clear', 'road_Traffic_Density': 'Low', 'type_Of_Order': 'Meal', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 0, 'city': 'Metropolitian', 'distance': 28552, 'day_Type': 'Weekday', 'time_Category': 'Noon'}, Prediction Value: 16.79289372515195, Rounded: 17, Prediction request successful.
+2024-05-23 00:31:35,782 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:31:35,803 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 23, 'weather_Condition': 'Clear', 'road_Traffic_Density': 'Low', 'type_Of_Order': 'Drinks', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 1, 'city': 'Urban', 'distance': 5273, 'day_Type': 'Weekend', 'time_Category': 'Morning'}, Prediction Value: 18.34017754547239, Rounded: 18, Prediction request successful.
+2024-05-23 00:32:31,150 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:32:37,131 - app - INFO - Method: retrain_model, Model: catboost_model.cbm, Model has been retrained with KaggleData.csv.
+2024-05-23 00:48:05,133 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:48:05,164 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 37, 'weather_Condition': 'Stormy', 'road_Traffic_Density': 'Jam', 'type_Of_Order': 'Market', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 1, 'city': 'Metropolitan', 'distance': 5867, 'day_Type': 'Weekday', 'time_Category': 'Evening'}, Prediction Value: 33.802540534304484, Rounded: 34, Prediction request successful.
+2024-05-23 00:48:26,439 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:48:26,456 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 37, 'weather_Condition': 'Stormy', 'road_Traffic_Density': 'Jam', 'type_Of_Order': 'Market', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 1, 'city': 'Metropolitan', 'distance': 9867, 'day_Type': 'Weekday', 'time_Category': 'Evening'}, Prediction Value: 33.82588597754406, Rounded: 34, Prediction request successful.
+2024-05-23 00:48:33,056 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:48:33,072 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 37, 'weather_Condition': 'Stormy', 'road_Traffic_Density': 'Jam', 'type_Of_Order': 'Market', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 1, 'city': 'Metropolitan', 'distance': 13867, 'day_Type': 'Weekday', 'time_Category': 'Evening'}, Prediction Value: 36.08056300210818, Rounded: 36, Prediction request successful.
+2024-05-23 00:48:38,007 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-05-23 00:48:38,020 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 37, 'weather_Condition': 'Stormy', 'road_Traffic_Density': 'Jam', 'type_Of_Order': 'Market', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 1, 'city': 'Metropolitan', 'distance': 5867, 'day_Type': 'Weekday', 'time_Category': 'Evening'}, Prediction Value: 33.802540534304484, Rounded: 34, Prediction request successful.
+2024-07-20 22:57:43,864 - app - INFO - AlertAvailableSessions bot started
+2024-07-20 22:58:58,871 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-07-20 22:59:17,918 - app - INFO - AlertAvailableSessions bot started
+2024-07-20 23:02:17,472 - app - INFO - AlertAvailableSessions bot stopped
+2024-07-20 23:02:35,517 - app - INFO - AlertAvailableSessions bot started
+2024-07-20 23:05:27,779 - app - INFO - AlertAvailableSessions bot started
+2024-07-20 23:10:00,010 - app - INFO - AlertAvailableSessions bot started
+2024-07-20 23:10:19,215 - app - INFO - AlertAvailableSessions bot started
+2024-07-20 23:20:04,176 - app - INFO - AlertAvailableSessions bot stopped
+2024-07-20 23:20:25,707 - app - ERROR - Exception on /start_available_sessions_bot [GET]
+Traceback (most recent call last):
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Software\ANN\KuryeNetFlask\app.py", line 74, in start_available_sessions_logs
+  File "D:\Software\ANN\KuryeNetFlask\AlertEmptySessions.py", line 166, in start
+    alert_empty_session.sessions()
+  File "D:\Software\ANN\KuryeNetFlask\AlertEmptySessions.py", line 142, in sessions
+    self.GetSessionInfo()
+  File "D:\Software\ANN\KuryeNetFlask\AlertEmptySessions.py", line 81, in GetSessionInfo
+    self.driver.quit()
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 193, in quit
+    self.service.stop()
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\selenium\webdriver\common\service.py", line 146, in stop
+    self.send_remote_shutdown_command()
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\selenium\webdriver\common\service.py", line 126, in send_remote_shutdown_command
+    request.urlopen(f"{self.service_url}/shutdown")
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 1377, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 1352, in do_open
+    r = h.getresponse()
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 278, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+2024-07-20 23:25:03,307 - app - INFO - AlertAvailableSessions bot stopped
+2024-07-20 23:40:12,878 - app - ERROR - Exception on /start_available_sessions_bot [GET]
+Traceback (most recent call last):
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\flask\app.py", line 873, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\flask\app.py", line 892, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\flask\app.py", line 1164, in make_response
+    raise TypeError(
+TypeError: The view function for 'start_available_sessions_logs' did not return a valid response. The function either returned None or ended without a return statement.
+2024-07-20 23:45:06,698 - app - INFO - AlertAvailableSessions bot stopped
+2024-07-20 23:45:08,917 - app - INFO - AlertAvailableSessions bot stopped
+2024-07-20 23:45:26,166 - app - ERROR - Exception on /start_available_sessions_bot [GET]
+Traceback (most recent call last):
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\urllib3\connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 278, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Software\ANN\KuryeNetFlask\app.py", line 73, in start_available_sessions_logs
+    alert_empty_session.start()
+  File "D:\Software\ANN\KuryeNetFlask\AlertEmptySessions.py", line 165, in start
+    alert_empty_session.sessions()
+  File "D:\Software\ANN\KuryeNetFlask\AlertEmptySessions.py", line 142, in sessions
+    self.GetSessionInfo()
+  File "D:\Software\ANN\KuryeNetFlask\AlertEmptySessions.py", line 50, in GetSessionInfo
+    driver.get(self.link1)
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 363, in get
+    self.execute(Command.GET, {"url": url})
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 302, in execute
+    return self._request(command_info[0], url, body=data)
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 322, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\urllib3\_request_methods.py", line 144, in request
+    return self.request_encode_body(
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\urllib3\_request_methods.py", line 279, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "D:\Software\ANN\KuryeNetFlask\venv\lib\site-packages\urllib3\connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1368, in getresponse
+    response.begin()
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 278, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\BURAK\AppData\Local\Programs\Python\Python310\lib\socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+2024-07-20 23:47:46,189 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-07-20 23:50:32,489 - app - INFO - AlertAvailableSessions bot stopped
+2024-07-20 23:50:34,524 - app - INFO - AlertAvailableSessions bot stopped
+2024-07-20 23:52:01,972 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-07-20 23:52:02,081 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 37, 'weather_Condition': 'Stormy', 'road_Traffic_Density': 'Jam', 'type_Of_Order': 'Market', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 1, 'city': 'Metropolitan', 'distance': 5867, 'day_Type': 'Weekday', 'time_Category': 'Evening'}, Prediction Value: 33.802540534304484, Rounded: 34, Prediction request successful.
+2024-07-20 23:52:03,823 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-07-20 23:52:03,850 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 37, 'weather_Condition': 'Stormy', 'road_Traffic_Density': 'Jam', 'type_Of_Order': 'Market', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 1, 'city': 'Metropolitan', 'distance': 5867, 'day_Type': 'Weekday', 'time_Category': 'Evening'}, Prediction Value: 33.802540534304484, Rounded: 34, Prediction request successful.
+2024-07-20 23:52:04,606 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-07-20 23:52:04,645 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 37, 'weather_Condition': 'Stormy', 'road_Traffic_Density': 'Jam', 'type_Of_Order': 'Market', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 1, 'city': 'Metropolitan', 'distance': 5867, 'day_Type': 'Weekday', 'time_Category': 'Evening'}, Prediction Value: 33.802540534304484, Rounded: 34, Prediction request successful.
+2024-07-20 23:52:10,139 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-07-20 23:52:10,149 - app - INFO - Method: write_data , Data: {'Delivery_Person_Age': 25, 'Order_Date': '2022-03-19', 'Time_Ordered': '11:30:00', 'Weather_Condition': 'Cloudy', 'Road_Traffic_Density': 'Low', 'Type_Of_Order': 'Meal', 'Type_Of_Vehicle': 'Car', 'Multiple_Deliveries': 0, 'City': 'Metropolitan', 'Time_Taken': 23, 'Distance': 18938, 'Day_Type': 'Weekday', 'Time_Category': 'Noon', 'Restaurant_Latitude': 22.745049, 'Restaurant_Longitude': 75.892471, 'Delivery_Location_Latitude': 22.765049, 'Delivery_Location_Longitude': 75.912471}, Data was written successful on KuryeNetData.csv file.
+2024-07-20 23:52:15,103 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-07-20 23:52:17,604 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-07-20 23:52:17,635 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 37, 'weather_Condition': 'Stormy', 'road_Traffic_Density': 'Jam', 'type_Of_Order': 'Market', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 1, 'city': 'Metropolitan', 'distance': 5867, 'day_Type': 'Weekday', 'time_Category': 'Evening'}, Prediction Value: 33.802540534304484, Rounded: 34, Prediction request successful.
+2024-07-20 23:54:28,157 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-07-20 23:54:29,654 - app - INFO - Method: verify_password, Username: admin, Password: admin, Basic Auth successful.
+2024-07-20 23:54:29,679 - app - INFO - Method: predict, Data: {'delivery_Person_Age': 37, 'weather_Condition': 'Stormy', 'road_Traffic_Density': 'Jam', 'type_Of_Order': 'Market', 'type_Of_Vehicle': 'Motorcycle', 'multiple_Deliveries': 1, 'city': 'Metropolitan', 'distance': 5867, 'day_Type': 'Weekday', 'time_Category': 'Evening'}, Prediction Value: 33.802540534304484, Rounded: 34, Prediction request successful.
+2024-07-21 00:01:10,465 - app - INFO - AlertAvailableSessions bot started
+2024-07-21 00:01:57,773 - app - INFO - AlertAvailableSessions bot stopped
+2024-07-21 00:03:00,008 - app - INFO - AlertAvailableSessions bot started
+2024-07-21 00:04:39,216 - app - INFO - AlertAvailableSessions bot stopped
+2024-07-21 00:06:37,973 - app - INFO - AlertAvailableSessions bot started
+2024-07-21 00:07:50,670 - app - INFO - AlertAvailableSessions bot stopped

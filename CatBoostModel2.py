@@ -6,7 +6,6 @@ import numpy as np
 
 # Veri setini yükle
 df = pd.read_csv('KaggleData.csv')
-
 # Bağımsız değişkenler (X) ve bağımlı değişken (y) seçimi
 X = df[['Delivery_Person_Age', 'Weather_Condition', 'Road_Traffic_Density', 'Type_Of_Order', 'Type_Of_Vehicle', 'Multiple_Deliveries', 'City', 'Distance', 'Day_Type', 'Time_Category']]
 y = df['Time_Taken']
