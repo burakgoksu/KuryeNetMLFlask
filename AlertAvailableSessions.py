@@ -79,6 +79,7 @@ class AlertAvailableSessions:
 
         with open(self.txt_file1, "r") as file:
             content = file.read()
+
             entries = content.split('------------------------------------------------------------')
             for entry in entries:
                 if(entry.find("Yer Var") > 0):
@@ -151,7 +152,7 @@ class AlertAvailableSessions:
         self._running = True
         while self._running:
             self.sessions()
-            time.sleep(180)
+            time.sleep(300)
 
     def stop(self):
         self.logger.info('AlertAvailableSessions bot stopped')
