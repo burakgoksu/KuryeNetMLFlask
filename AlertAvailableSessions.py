@@ -61,10 +61,16 @@ class AlertAvailableSessions:
         self.logger.info('Seans Secim Buton was Clicked')
 
         time.sleep(2)
-        wait.until(EC.element_to_be_clickable((By.ID, 'closeModal')))
-        close_button = driver.find_element(By.ID, 'closeModal')
-        close_button.click()
-        self.logger.info('Pop-up was closed')
+        # Pop-up kontrolü ve kapatma işlemi
+        try:
+            wait2 = WebDriverWait(driver, 5)
+            wait2.until(EC.element_to_be_clickable((By.ID, 'closeModal')))
+            close_button = driver.find_element(By.ID, 'closeModal')
+            close_button.click()
+            self.logger.info('Pop-up was closed')
+        except Exception as e:
+            self.logger.info('No pop-up to close')
+            print(f'Pop-up kapatılmadı: {e}')
 
         time.sleep(2)
         panels = driver.find_elements(By.CLASS_NAME, 'col-md-1')
@@ -152,7 +158,7 @@ class AlertAvailableSessions:
         self._running = True
         while self._running:
             self.sessions()
-            time.sleep(240)
+            time.sleep(180)
 
     def stop(self):
         self.logger.info('AlertAvailableSessions bot stopped')
