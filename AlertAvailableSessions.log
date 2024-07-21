@@ -523,3 +523,19 @@
 2024-07-21 18:05:40,478 - AlertAvailableSessions - INFO - Available Sessions: []
 2024-07-21 18:05:40,479 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
 2024-07-21 18:05:40,479 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-21 20:10:21,380 - AlertAvailableSessions - INFO - Web Driver was started
+2024-07-21 20:10:21,381 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-07-21 20:10:28,303 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-21 20:10:28,667 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-21 20:10:30,728 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-21 20:10:32,746 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-21 20:10:34,979 - AlertAvailableSessions - INFO - Available Sessions: ['\nÇarşamba\n24.07.2024\nHAVUZ\n60 60\nDolu\n12:30 - 13:30\nErkek\nHAVUZ\n48 60\nYer Var\n18:30 - 19:30\nErkek\nHAVUZ\n26 60\nYer Var\n20:00 - 21:00\nErkek\n', '***************']
+2024-07-21 20:10:34,983 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-21 20:10:40,461 - AlertAvailableSessions - INFO - Email sent successfully to gogsub58365@gmail.com
+2024-07-21 20:11:01,352 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-21 20:11:01,733 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-21 20:11:03,795 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-21 20:11:05,815 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-21 20:11:08,064 - AlertAvailableSessions - INFO - Available Sessions: ['\nÇarşamba\n24.07.2024\nHAVUZ\n60 60\nDolu\n12:30 - 13:30\nErkek\nHAVUZ\n48 60\nYer Var\n18:30 - 19:30\nErkek\nHAVUZ\n26 60\nYer Var\n20:00 - 21:00\nErkek\n', '***************']
+2024-07-21 20:11:08,064 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-21 20:11:08,065 - AlertAvailableSessions - INFO - Sent Sessions List was cleared

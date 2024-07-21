@@ -44,24 +44,34 @@ class AlertAvailableSessions:
 
     def GetSessionInfo(self):
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=self.chrome_option)
-        driver.get(self.link1)
-        tc_no = driver.find_element(By.ID, 'txtTCPasaport')
-        tc_no.send_keys('53875003034')
-        password = driver.find_element(By.ID, 'txtSifre')
-        password.send_keys('B1245789630g')
-        login_buton = driver.find_element(By.ID, 'btnGirisYap')
-        login_buton.click()
-        self.logger.info('Login Successfully')
+        try:
+            driver.get(self.link1)
+            tc_no = driver.find_element(By.ID, 'txtTCPasaport')
+            tc_no.send_keys('53875003034')
+            password = driver.find_element(By.ID, 'txtSifre')
+            password.send_keys('B1245789630g')
+            login_buton = driver.find_element(By.ID, 'btnGirisYap')
+            login_buton.click()
+            self.logger.info('Login Successfully')
+        except Exception as e:
+            self.logger.error(f'Login failed: {e}')
+            driver.quit()
+            return
 
-        wait = WebDriverWait(driver, 10)
-        driver.get(self.link2)
-        wait.until(EC.element_to_be_clickable((By.ID, 'pageContent_rptListe_lbtnSeansSecim_0')))
-        choose_session_button = driver.find_element(By.ID, 'pageContent_rptListe_lbtnSeansSecim_0')
-        driver.execute_script("arguments[0].click();", choose_session_button)
-        self.logger.info('Seans Secim Buton was Clicked')
+        try:
+            wait = WebDriverWait(driver, 10)
+            driver.get(self.link2)
+            wait.until(EC.element_to_be_clickable((By.ID, 'pageContent_rptListe_lbtnSeansSecim_0')))
+            choose_session_button = driver.find_element(By.ID, 'pageContent_rptListe_lbtnSeansSecim_0')
+            driver.execute_script("arguments[0].click();", choose_session_button)
+            self.logger.info('Seans Secim Buton was Clicked')
+        except Exception as e:
+            self.logger.error(f'Seans Secim Buton was NOT Clicked: {e}')
+            driver.quit()
+            return
 
         time.sleep(2)
-        # Pop-up kontrolü ve kapatma işlemi
+
         try:
             wait2 = WebDriverWait(driver, 5)
             wait2.until(EC.element_to_be_clickable((By.ID, 'closeModal')))
@@ -73,8 +83,13 @@ class AlertAvailableSessions:
             print(f'Pop-up kapatılmadı: {e}')
 
         time.sleep(2)
-        panels = driver.find_elements(By.CLASS_NAME, 'col-md-1')
-        self.logger.info('Get Sessions Info')
+        try:
+            panels = driver.find_elements(By.CLASS_NAME, 'col-md-1')
+            self.logger.info('Get Sessions Info')
+        except Exception as e:
+            self.logger.error(f'Failed to find session panels: {e}')
+            driver.quit()
+            return
 
         with open(self.txt_file1, "w") as txt_file1:
             for panel in panels:
@@ -158,7 +173,7 @@ class AlertAvailableSessions:
         self._running = True
         while self._running:
             self.sessions()
-            time.sleep(180)
+            time.sleep(300)
 
     def stop(self):
         self.logger.info('AlertAvailableSessions bot stopped')
