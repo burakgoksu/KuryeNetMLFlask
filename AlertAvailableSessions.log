@@ -446,3 +446,28 @@
 2024-07-21 13:13:55,245 - AlertAvailableSessions - INFO - Available Sessions: ['\nÇarşamba\n24.07.2024\nHAVUZ\n43 60\nYer Var\n12:30 - 13:30\nErkek\n', '***************']
 2024-07-21 13:13:55,246 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
 2024-07-21 13:14:00,769 - AlertAvailableSessions - INFO - Email sent successfully to gogsub58365@gmail.com
+2024-07-21 16:02:26,417 - AlertAvailableSessions - INFO - Web Driver was started
+2024-07-21 16:02:26,417 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-07-21 16:02:34,071 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-21 16:02:34,471 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-21 16:02:36,531 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-21 16:02:38,547 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-21 16:02:40,797 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-21 16:02:40,797 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-21 16:02:44,891 - AlertAvailableSessions - WARNING - No sessions available, no email will be sent.
+2024-07-21 16:04:14,945 - AlertAvailableSessions - INFO - Web Driver was started
+2024-07-21 16:04:14,946 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-07-21 16:04:21,349 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-21 16:04:22,908 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-21 16:04:24,964 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-21 16:04:26,989 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-21 16:04:29,266 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-21 16:04:29,266 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-21 16:04:29,266 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-21 16:04:54,815 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-21 16:04:55,212 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-21 16:04:57,265 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-21 16:04:59,282 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-21 16:05:01,530 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-21 16:05:01,531 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-21 16:05:01,531 - AlertAvailableSessions - INFO - Sent Sessions List was cleared

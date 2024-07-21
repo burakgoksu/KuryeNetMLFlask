@@ -314,3 +314,5 @@ urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(1
 2024-07-21 00:06:37,973 - app - INFO - AlertAvailableSessions bot started
 2024-07-21 00:07:50,670 - app - INFO - AlertAvailableSessions bot stopped
 2024-07-21 13:10:22,395 - app - INFO - AlertAvailableSessions bot started
+2024-07-21 16:02:26,417 - app - INFO - AlertAvailableSessions bot started
+2024-07-21 16:04:14,946 - app - INFO - AlertAvailableSessions bot started
