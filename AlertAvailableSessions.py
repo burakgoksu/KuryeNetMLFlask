@@ -175,6 +175,7 @@ class AlertAvailableSessions:
             self.sessions()
             time.sleep(300)
 
+
     def stop(self):
         self.logger.info('AlertAvailableSessions bot stopped')
         self._running = False
