@@ -12,10 +12,13 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from webdriver_manager.chrome import ChromeDriverManager
+import signal
+import sys
 
 
 class AlertAvailableSessions:
-    def __init__(self, link1, link2, txt_file1, txt_file2, sender_email, sender_password, receiver_email, headless=True):
+    def __init__(self, link1, link2, txt_file1, txt_file2, sender_email, sender_password, receiver_email,
+                 headless=True):
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.INFO)
 
@@ -29,7 +32,8 @@ class AlertAvailableSessions:
         self.chrome_option = Options()
         if headless:
             self.chrome_option.add_argument("--headless")
-        self.chrome_option.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0")
+        self.chrome_option.add_argument(
+            "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0")
         self.link1 = link1
         self.link2 = link2
         self.txt_file1 = txt_file1
@@ -53,57 +57,47 @@ class AlertAvailableSessions:
             login_buton = driver.find_element(By.ID, 'btnGirisYap')
             login_buton.click()
             self.logger.info('Login Successfully')
-        except Exception as e:
-            self.logger.error(f'Login failed: {e}')
-            driver.quit()
-            return
 
-        try:
             wait = WebDriverWait(driver, 10)
             driver.get(self.link2)
             wait.until(EC.element_to_be_clickable((By.ID, 'pageContent_rptListe_lbtnSeansSecim_0')))
             choose_session_button = driver.find_element(By.ID, 'pageContent_rptListe_lbtnSeansSecim_0')
             driver.execute_script("arguments[0].click();", choose_session_button)
             self.logger.info('Seans Secim Buton was Clicked')
+
+            time.sleep(2)
+            try:
+                wait2 = WebDriverWait(driver, 5)
+                wait2.until(EC.element_to_be_clickable((By.ID, 'closeModal')))
+                close_button = driver.find_element(By.ID, 'closeModal')
+                close_button.click()
+                self.logger.info('Pop-up was closed')
+            except Exception as e:
+                self.logger.warning('Pop-up not found, continuing without closing: ' + str(e))
+
+            time.sleep(2)
+            try:
+                panels = driver.find_elements(By.CLASS_NAME, 'col-md-1')
+                self.logger.info('Get Sessions Info')
+
+                with open(self.txt_file1, "w") as txt_file1:
+                    for panel in panels:
+                        txt_file1.writelines(panel.text + "\n")
+                        txt_file1.writelines("------------------------------------------------------------\n")
+            except Exception as e:
+                self.logger.warning('Panels not found: ' + str(e))
+
         except Exception as e:
-            self.logger.error(f'Seans Secim Buton was NOT Clicked: {e}')
+            self.logger.error('Error occurred: ' + str(e))
+        finally:
             driver.quit()
-            return
-
-        time.sleep(2)
-
-        try:
-            wait2 = WebDriverWait(driver, 5)
-            wait2.until(EC.element_to_be_clickable((By.ID, 'closeModal')))
-            close_button = driver.find_element(By.ID, 'closeModal')
-            close_button.click()
-            self.logger.info('Pop-up was closed')
-        except Exception as e:
-            self.logger.info('No pop-up to close')
-            print(f'Pop-up kapatılmadı: {e}')
-
-        time.sleep(2)
-        try:
-            panels = driver.find_elements(By.CLASS_NAME, 'col-md-1')
-            self.logger.info('Get Sessions Info')
-        except Exception as e:
-            self.logger.error(f'Failed to find session panels: {e}')
-            driver.quit()
-            return
-
-        with open(self.txt_file1, "w") as txt_file1:
-            for panel in panels:
-                txt_file1.writelines(panel.text + "\n")
-                txt_file1.writelines("------------------------------------------------------------\n")
-
-        driver.quit()
 
         with open(self.txt_file1, "r") as file:
             content = file.read()
 
             entries = content.split('------------------------------------------------------------')
             for entry in entries:
-                if(entry.find("Yer Var") > 0):
+                if (entry.find("Yer Var") > 0):
                     self.__sent_sessions_list.append(entry)
                     self.__sent_sessions_list.append("***************")
 
@@ -116,7 +110,8 @@ class AlertAvailableSessions:
                 if ''.join(self.__sent_sessions_list).strip() == existing_content.strip():
                     self.__is_new_sessions = False
                     print('Yeni içerik mevcut içerikle aynı. Dosya güncellenmedi ve mail gönderilmedi.')
-                    self.logger.warning('The new content is the same as the existing content. No file updates and e-mails did not sent.')
+                    self.logger.warning(
+                        'The new content is the same as the existing content. No file updates and e-mails did not sent.')
                 else:
                     self.__is_new_sessions = True
                     with open(self.txt_file2, "w") as txt_file2:
@@ -173,9 +168,17 @@ class AlertAvailableSessions:
         self._running = True
         while self._running:
             self.sessions()
-            time.sleep(300)
-
+            time.sleep(6000)
 
     def stop(self):
         self.logger.info('AlertAvailableSessions bot stopped')
         self._running = False
+
+
+def graceful_shutdown(signum, frame):
+    print('Received shutdown signal...')
+    # Cleanup tasks here
+    sys.exit(0)
+
+
+signal.signal(signal.SIGTERM, graceful_shutdown)
