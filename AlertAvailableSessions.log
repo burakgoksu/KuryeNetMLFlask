@@ -548,3 +548,89 @@
 2024-07-27 03:49:08,252 - AlertAvailableSessions - INFO - Available Sessions: []
 2024-07-27 03:49:08,257 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
 2024-07-27 03:49:12,344 - AlertAvailableSessions - WARNING - No sessions available, no email will be sent.
+2024-07-27 03:54:46,002 - AlertAvailableSessions - INFO - Web Driver was started
+2024-07-27 03:54:46,003 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-07-27 03:54:51,884 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-27 03:54:52,250 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-27 03:54:54,318 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-27 03:54:56,340 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-27 03:54:58,615 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-27 03:54:58,615 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-27 03:54:58,616 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-27 03:56:01,603 - AlertAvailableSessions - ERROR - Login failed: 'NoneType' object has no attribute 'send_keys'
+2024-07-27 03:56:37,396 - AlertAvailableSessions - INFO - Web Driver was started
+2024-07-27 03:56:37,396 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-07-27 03:56:43,247 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-27 03:56:43,737 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-27 03:57:25,403 - AlertAvailableSessions - INFO - No pop-up to close
+2024-07-27 03:57:27,418 - AlertAvailableSessions - ERROR - Failed to find session panels: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.185)
+Stacktrace:
+	GetHandleVerifier [0x0023C203+27395]
+	(No symbol) [0x001D3E04]
+	(No symbol) [0x000D1B7F]
+	(No symbol) [0x000AE483]
+	(No symbol) [0x0013A06F]
+	(No symbol) [0x0014C3D6]
+	(No symbol) [0x00133736]
+	(No symbol) [0x00107541]
+	(No symbol) [0x001080BD]
+	GetHandleVerifier [0x004F3AB3+2876339]
+	GetHandleVerifier [0x00547F7D+3221629]
+	GetHandleVerifier [0x002BD674+556916]
+	GetHandleVerifier [0x002C478C+585868]
+	(No symbol) [0x001DCE44]
+	(No symbol) [0x001D9858]
+	(No symbol) [0x001D99F7]
+	(No symbol) [0x001CBF4E]
+	BaseThreadInitThunk [0x75A87BA9+25]
+	RtlInitializeExceptionChain [0x774BC10B+107]
+	RtlClearBits [0x774BC08F+191]
+	(No symbol) [0x00000000]
+
+2024-07-27 03:57:54,493 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-27 03:57:55,630 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-27 03:57:57,685 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-27 03:57:59,698 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-27 03:58:01,930 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-27 03:58:01,930 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-27 03:58:01,930 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-27 03:58:51,900 - AlertAvailableSessions - ERROR - Login failed: 'NoneType' object has no attribute 'send_keys'
+2024-07-27 17:33:30,146 - AlertAvailableSessions - INFO - Web Driver was started
+2024-07-27 17:33:30,147 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-07-27 17:33:40,527 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-27 17:33:41,161 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-27 17:33:43,438 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-27 17:33:45,485 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-27 17:33:48,193 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-27 17:33:48,194 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-27 17:33:48,194 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-27 17:34:15,284 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-27 17:34:16,861 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-27 17:34:19,129 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-27 17:34:21,161 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-27 17:34:23,941 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-27 17:34:23,942 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-27 17:34:23,942 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-27 17:34:51,267 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-27 17:34:51,889 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-27 17:34:53,996 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-27 17:34:56,032 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-27 17:34:58,946 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-27 17:34:58,946 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-27 17:34:58,946 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-27 17:35:25,977 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-27 17:35:26,548 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-27 17:35:28,725 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-27 17:35:30,769 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-27 17:35:33,278 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-27 17:35:33,279 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-27 17:35:33,279 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-27 17:36:00,380 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-27 17:36:00,908 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-27 17:36:03,154 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-27 17:36:05,196 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-27 17:36:07,868 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-27 17:36:07,869 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-27 17:36:07,869 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
