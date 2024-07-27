@@ -29,8 +29,6 @@ class AlertAvailableSessions:
         self.chrome_option = Options()
         if headless:
             self.chrome_option.add_argument("--headless")
-
-        self.chrome_web_driver_path = "/app/.chromedriver/bin/chromedriver"  # Heroku'daki doğru yol
         self.chrome_option.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0")
         self.link1 = link1
         self.link2 = link2
@@ -45,8 +43,7 @@ class AlertAvailableSessions:
         self._running = False
 
     def GetSessionInfo(self):
-        service = Service(self.chrome_web_driver_path)
-        driver = webdriver.Chrome(service=service, options=self.chrome_option)
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=self.chrome_option)
         try:
             driver.get(self.link1)
             tc_no = driver.find_element(By.ID, 'txtTCPasaport')
