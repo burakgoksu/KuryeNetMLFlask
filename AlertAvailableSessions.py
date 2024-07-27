@@ -43,13 +43,7 @@ class AlertAvailableSessions:
         self._running = False
 
     def GetSessionInfo(self):
-        GOOGLE_CHROME_PATH = '/app/.apt/usr/bin/google_chrome'
-        CHROMEDRIVER_PATH = '/app/.chromedriver/bin/chromedriver'
-        chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument('--disable-gpu')
-        chrome_options.add_argument('--no-sandbox')
-        chrome_options.binary_location = GOOGLE_CHROME_PATH
-        driver = webdriver.Chrome(service=Service(CHROMEDRIVER_PATH), options=chrome_options)
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=self.chrome_option)
         try:
             driver.get(self.link1)
             tc_no = driver.find_element(By.ID, 'txtTCPasaport')
@@ -179,7 +173,7 @@ class AlertAvailableSessions:
         self._running = True
         while self._running:
             self.sessions()
-            time.sleep(600)
+            time.sleep(601)
 
     def stop(self):
         self.logger.info('AlertAvailableSessions bot stopped')
