@@ -29,6 +29,9 @@ class AlertAvailableSessions:
         self.chrome_option = Options()
         if headless:
             self.chrome_option.add_argument("--headless")
+        self.chrome_option.add_argument("--disable-gpu")
+        self.chrome_option.add_argument("--no-sandbox")
+        self.chrome_option.add_argument("--disable-dev-shm-usage")
         self.chrome_option.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0")
         self.link1 = link1
         self.link2 = link2
