@@ -58,7 +58,7 @@ def show_available_sessions_logs():
     return send_file(log_file_path, as_attachment=True)
 
 @app.route('/start_available_sessions_bot', methods=['GET'])
-def start_available_sessions_logs():
+def start_available_sessions_boy():
     global alert_empty_session, alert_thread
     if alert_empty_session is None:
         alert_empty_session = AlertAvailableSessions(
@@ -80,7 +80,7 @@ def start_available_sessions_logs():
         return 'AlertAvailableSessions bot is already running'
 
 @app.route('/stop_available_sessions_bot', methods=['GET'])
-def stop_available_sessions_logs():
+def stop_available_sessions_boy():
     global alert_empty_session, alert_thread
     if alert_empty_session is not None:
         alert_empty_session.stop()
