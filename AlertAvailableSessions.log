@@ -539,3 +539,12 @@
 2024-07-21 20:11:08,064 - AlertAvailableSessions - INFO - Available Sessions: ['\nÇarşamba\n24.07.2024\nHAVUZ\n60 60\nDolu\n12:30 - 13:30\nErkek\nHAVUZ\n48 60\nYer Var\n18:30 - 19:30\nErkek\nHAVUZ\n26 60\nYer Var\n20:00 - 21:00\nErkek\n', '***************']
 2024-07-21 20:11:08,064 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
 2024-07-21 20:11:08,065 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-27 03:48:48,216 - AlertAvailableSessions - INFO - Web Driver was started
+2024-07-27 03:48:48,216 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-07-27 03:48:56,559 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-27 03:48:56,937 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-27 03:49:04,065 - AlertAvailableSessions - INFO - No pop-up to close
+2024-07-27 03:49:06,083 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-27 03:49:08,252 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-27 03:49:08,257 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-27 03:49:12,344 - AlertAvailableSessions - WARNING - No sessions available, no email will be sent.
