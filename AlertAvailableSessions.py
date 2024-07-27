@@ -43,7 +43,13 @@ class AlertAvailableSessions:
         self._running = False
 
     def GetSessionInfo(self):
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=self.chrome_option)
+        GOOGLE_CHROME_PATH = '/app/.apt/usr/bin/google_chrome'
+        CHROMEDRIVER_PATH = '/app/.chromedriver/bin/chromedriver'
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument('--disable-gpu')
+        chrome_options.add_argument('--no-sandbox')
+        chrome_options.binary_location = GOOGLE_CHROME_PATH
+        driver = webdriver.Chrome(service=Service(CHROMEDRIVER_PATH), options=chrome_options)
         try:
             driver.get(self.link1)
             tc_no = driver.find_element(By.ID, 'txtTCPasaport')
