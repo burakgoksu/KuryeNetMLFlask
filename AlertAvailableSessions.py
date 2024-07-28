@@ -1,5 +1,6 @@
 import logging
 import os
+import smtplib
 from logging.handlers import RotatingFileHandler
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -48,7 +49,9 @@ class AlertAvailableSessions:
 
     def GetSessionInfo(self):
         #Firefox
-        driver = webdriver.Firefox(options=self.firefox_option)
+        options = webdriver.FirefoxOptions()
+        options.add_argument("--headless")
+        driver = webdriver.Firefox(options=options)
         try:
             driver.get(self.link1)
             tc_no = driver.find_element(By.ID, 'txtTCPasaport')
