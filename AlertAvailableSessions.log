@@ -130,3 +130,29 @@ dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
 2024-07-28 16:13:12,957 - AlertAvailableSessions - INFO - Available Sessions: []
 2024-07-28 16:13:12,957 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
 2024-07-28 16:13:12,957 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-28 16:40:03,677 - AlertAvailableSessions - INFO - Web Driver was started
+2024-07-28 16:40:03,678 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-07-28 16:40:14,791 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-28 16:40:15,358 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-28 16:40:17,591 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-28 16:40:19,608 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-28 16:40:24,085 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-28 16:40:24,085 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-28 16:40:24,085 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-28 16:41:29,911 - AlertAvailableSessions - ERROR - Login failed: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+2024-07-28 16:41:36,358 - AlertAvailableSessions - INFO - Web Driver was started
+2024-07-28 16:41:36,358 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-07-28 16:41:42,708 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-28 16:41:43,163 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-28 16:41:45,398 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-28 16:41:47,415 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-28 16:41:52,101 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-28 16:41:52,101 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-28 16:41:52,101 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-28 16:42:17,473 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-28 16:42:17,983 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-28 16:42:20,213 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-28 16:42:22,223 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-28 16:42:26,894 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-28 16:42:26,894 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-28 16:42:26,894 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
