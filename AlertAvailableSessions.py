@@ -7,8 +7,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.options import Options
 import time
-import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from webdriver_manager.chrome import ChromeDriverManager
@@ -26,13 +27,13 @@ class AlertAvailableSessions:
             file_handler.setFormatter(formatter)
             self.logger.addHandler(file_handler)
 
-        self.chrome_option = Options()
+        self.firefox_option = Options()
         if headless:
-            self.chrome_option.add_argument("--headless")
-        self.chrome_option.add_argument("--disable-gpu")
-        self.chrome_option.add_argument("--no-sandbox")
-        self.chrome_option.add_argument("--disable-dev-shm-usage")
-        self.chrome_option.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0")
+            self.firefox_option.add_argument("--headless")
+        self.firefox_option.add_argument("--disable-gpu")
+        self.firefox_option.add_argument("--no-sandbox")
+        self.firefox_option.add_argument("--disable-dev-shm-usage")
+        self.firefox_option.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0")
         self.link1 = link1
         self.link2 = link2
         self.txt_file1 = txt_file1
@@ -46,7 +47,8 @@ class AlertAvailableSessions:
         self._running = False
 
     def GetSessionInfo(self):
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=self.chrome_option)
+        #Firefox
+        driver = webdriver.Firefox(options=self.firefox_option)
         try:
             driver.get(self.link1)
             tc_no = driver.find_element(By.ID, 'txtTCPasaport')
@@ -176,7 +178,7 @@ class AlertAvailableSessions:
         self._running = True
         while self._running:
             self.sessions()
-            time.sleep(601)
+            time.sleep(15)
 
     def stop(self):
         self.logger.info('AlertAvailableSessions bot stopped')

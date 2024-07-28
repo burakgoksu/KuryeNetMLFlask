@@ -25,3 +25,71 @@
 2024-07-28 02:11:53,100 - AlertAvailableSessions - INFO - Available Sessions: []
 2024-07-28 02:11:53,100 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
 2024-07-28 02:11:53,100 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-28 02:26:32,706 - AlertAvailableSessions - INFO - Web Driver was started
+2024-07-28 02:26:32,707 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-07-28 02:26:39,092 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-28 02:26:39,466 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-28 02:26:41,525 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-28 02:26:43,537 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-28 02:26:47,322 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-28 02:26:47,322 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-28 02:26:47,322 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-28 02:36:58,710 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-28 02:36:59,812 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-28 02:37:01,883 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-28 02:37:03,907 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-28 02:37:07,751 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-28 02:37:07,751 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-28 02:37:07,751 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-28 15:26:47,258 - AlertAvailableSessions - INFO - Web Driver was started
+2024-07-28 15:26:47,259 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-07-28 15:26:55,567 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-28 15:26:56,055 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-28 15:26:58,294 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-28 15:27:00,308 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-28 15:27:05,168 - AlertAvailableSessions - INFO - Available Sessions: ['\nPazar\n28.07.2024\nHAVUZ\n59 60\nYer Var\n18:30 - 19:30\nErkek\n', '***************']
+2024-07-28 15:27:05,169 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-28 15:27:10,761 - AlertAvailableSessions - INFO - Email sent successfully to gogsub58365@gmail.com
+2024-07-28 15:28:15,070 - AlertAvailableSessions - INFO - Web Driver was started
+2024-07-28 15:28:15,071 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-07-28 15:28:21,384 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-28 15:28:21,859 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-28 15:28:24,094 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-28 15:28:26,109 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-28 15:28:30,856 - AlertAvailableSessions - INFO - Available Sessions: ['\nPazar\n28.07.2024\nHAVUZ\n59 60\nYer Var\n18:30 - 19:30\nErkek\n', '***************']
+2024-07-28 15:28:30,856 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-28 15:28:30,856 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-28 15:28:56,093 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-28 15:28:56,569 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-28 15:28:58,813 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-28 15:29:00,833 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-28 15:29:05,597 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-28 15:29:05,598 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-28 15:29:09,686 - AlertAvailableSessions - WARNING - No sessions available, no email will be sent.
+2024-07-28 15:29:31,266 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-28 15:29:31,791 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-28 15:29:34,028 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-28 15:33:27,327 - AlertAvailableSessions - INFO - Web Driver was started
+2024-07-28 15:33:27,328 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-07-28 15:33:38,653 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-28 15:33:49,700 - AlertAvailableSessions - ERROR - Seans Secim Buton was NOT Clicked: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-07-28 15:34:18,749 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-28 15:34:19,279 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-28 15:34:21,513 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-28 15:34:23,529 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-28 15:34:26,411 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-28 15:34:26,411 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-28 15:34:26,411 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-07-28 15:34:52,500 - AlertAvailableSessions - INFO - Login Successfully
+2024-07-28 15:34:52,995 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-07-28 15:34:55,223 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-07-28 15:34:57,244 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-07-28 15:35:00,005 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-07-28 15:35:00,005 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-07-28 15:35:00,005 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
