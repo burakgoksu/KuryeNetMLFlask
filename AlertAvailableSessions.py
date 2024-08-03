@@ -15,7 +15,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 class AlertAvailableSessions:
-    def __init__(self, link1, link2, txt_file1, txt_file2, sender_email, sender_password, receiver_email, headless=True):
+    def __init__(self, link1, link2, txt_file1, txt_file2, sender_email, sender_password, receiver_email,
+                 headless=True):
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.INFO)
 
@@ -26,12 +27,17 @@ class AlertAvailableSessions:
             file_handler.setFormatter(formatter)
             self.logger.addHandler(file_handler)
 
-        self.chrome_binary = "D:\chrome-win64\chrome.exe"
+        self.chrome_binary = "D:/chrome-win64/chrome.exe"
         self.chrome_binary_heroku = "/tmp/build_ef781a6f/.chrome-for-testing/chrome-linux64/chrome"
-        self.webdriver_binary = "D:\chromedriver-win64\chromedriver.exe"
+        self.webdriver_binary = "D:/chromedriver-win64/chromedriver.exe"
+        self.webdriver_binary_heroku = "/tmp/build_548aa65d/.chrome-for-testing/chromedriver-linux64/chromedriver"
         self.chrome_option = Options()
         if headless:
             self.chrome_option.add_argument("--headless")
+        self.chrome_option.add_argument("--disable-dev-shm-usage")
+        self.chrome_option.add_argument("--no-sandbox")
+        self.chrome_option.add_argument("--disable-gpu")
+        self.chrome_option.add_argument("--remote-debugging-port=9222")
         self.chrome_option.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0")
         self.link1 = link1
         self.link2 = link2
@@ -47,7 +53,7 @@ class AlertAvailableSessions:
 
     def GetSessionInfo(self):
         self.chrome_option.binary_location = self.chrome_binary_heroku
-        driver = webdriver.Chrome(options=self.chrome_option)
+        driver = webdriver.Chrome(executable_path=self.webdriver_binary_heroku, options=self.chrome_option)
         try:
             driver.get(self.link1)
             tc_no = driver.find_element(By.ID, 'txtTCPasaport')
@@ -107,7 +113,7 @@ class AlertAvailableSessions:
 
             entries = content.split('------------------------------------------------------------')
             for entry in entries:
-                if(entry.find("Yer Var") > 0):
+                if (entry.find("Yer Var") > 0):
                     self.__sent_sessions_list.append(entry)
                     self.__sent_sessions_list.append("***************")
 
@@ -120,7 +126,8 @@ class AlertAvailableSessions:
                 if ''.join(self.__sent_sessions_list).strip() == existing_content.strip():
                     self.__is_new_sessions = False
                     print('Yeni içerik mevcut içerikle aynı. Dosya güncellenmedi ve mail gönderilmedi.')
-                    self.logger.warning('The new content is the same as the existing content. No file updates and e-mails did not sent.')
+                    self.logger.warning(
+                        'The new content is the same as the existing content. No file updates and e-mails did not sent.')
                 else:
                     self.__is_new_sessions = True
                     with open(self.txt_file2, "w") as txt_file2:
@@ -178,7 +185,6 @@ class AlertAvailableSessions:
         while self._running:
             self.sessions()
             time.sleep(15)
-
 
     def stop(self):
         self.logger.info('AlertAvailableSessions bot stopped')
