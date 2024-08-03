@@ -232,3 +232,16 @@ Stacktrace:
 	BaseThreadInitThunk [0x00007FFD993D257D+29]
 	RtlUserThreadStart [0x00007FFD99C6AF28+40]
 
+2024-08-04 01:06:35,272 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 01:06:35,273 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 01:07:04,061 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 01:07:04,062 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 01:07:34,321 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 01:07:34,321 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 01:07:40,676 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-04 01:07:41,072 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-04 01:07:43,126 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-04 01:07:45,143 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-08-04 01:07:47,550 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-08-04 01:07:47,550 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-08-04 01:07:47,550 - AlertAvailableSessions - INFO - Sent Sessions List was cleared

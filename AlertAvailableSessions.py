@@ -30,8 +30,7 @@ class AlertAvailableSessions:
         self.chrome_binary = "D:/chrome-win64/chrome.exe"
         self.chrome_binary_heroku = "/app/.apt/usr/bin/google-chrome"
         self.webdriver_binary = "D:/chromedriver-win64/chromedriver.exe"
-        self.webdriver_binary_heroku = "/tmp/build_548aa65d/.chrome-for-testing/chromedriver-linux64/chromedriver"
-        self.service = Service('/app/.chromedriver/bin/chromedriver')
+        self.webdriver_binary_heroku = "/app/.chromedriver/bin/chromedriver"
         self.service = Service(self.webdriver_binary_heroku)
         self.chrome_option = Options()
         if headless:
@@ -55,7 +54,7 @@ class AlertAvailableSessions:
 
     def GetSessionInfo(self):
         self.chrome_option.binary_location = self.chrome_binary_heroku
-        driver = webdriver.Chrome(options=self.chrome_option)
+        driver = webdriver.Chrome(service=Service(self.webdriver_binary_heroku), options=self.chrome_option)
         try:
             driver.get(self.link1)
             tc_no = driver.find_element(By.ID, 'txtTCPasaport')
