@@ -29,6 +29,13 @@ class AlertAvailableSessions:
         self.chrome_option = Options()
         if headless:
             self.chrome_option.add_argument("--headless")
+        self.chrome_option.add_argument("--no-sandbox")
+        self.chrome_option.add_argument("--disable-gpu")
+        self.chrome_option.add_argument("--remote-debugging-port=9222")
+        self.chrome_binary_heroku = "/app/.chrome-for-testing/chrome-linux64/chrome"
+        self.webdriver_binary = "D:/chromedriver-win64/chromedriver.exe"
+        self.chrome_binary = "D:/chrome-win64/chrome.exe"
+        self.webdriver_binary_heroku = "/app/.chrome-for-testing/chromedriver-linux64/chromedriver"
         self.chrome_option.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0")
         self.link1 = link1
         self.link2 = link2
@@ -43,14 +50,8 @@ class AlertAvailableSessions:
         self._running = False
 
     def GetSessionInfo(self):
-        # driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=self.chrome_option)
-
-        options = webdriver.FirefoxOptions()
-        options.add_argument("-headless")
-        options.add_argument("-disable-gpu")
-        options.add_argument("-no-sandbox")
-        driver = webdriver.Firefox(options=options)
-
+        self.chrome_option.binary_location = self.chrome_binary_heroku
+        driver = webdriver.Chrome(service=Service(self.webdriver_binary_heroku), options=self.chrome_option)
         try:
             driver.get(self.link1)
             tc_no = driver.find_element(By.ID, 'txtTCPasaport')
@@ -180,7 +181,7 @@ class AlertAvailableSessions:
         self._running = True
         while self._running:
             self.sessions()
-            time.sleep(300)
+            time.sleep(15)
 
 
     def stop(self):

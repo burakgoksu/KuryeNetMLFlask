@@ -281,3 +281,12 @@ Stacktrace:
 2024-08-04 02:08:13,348 - AlertAvailableSessions - INFO - Available Sessions: []
 2024-08-04 02:08:13,348 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
 2024-08-04 02:08:13,348 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-08-04 02:49:29,197 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 02:49:29,198 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 02:49:37,010 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-04 02:49:37,387 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-04 02:49:39,451 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-04 02:49:41,462 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-08-04 02:49:43,851 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-08-04 02:49:43,851 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-08-04 02:49:43,851 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
