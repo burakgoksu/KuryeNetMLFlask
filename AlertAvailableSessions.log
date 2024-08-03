@@ -245,3 +245,39 @@ Stacktrace:
 2024-08-04 01:07:47,550 - AlertAvailableSessions - INFO - Available Sessions: []
 2024-08-04 01:07:47,550 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
 2024-08-04 01:07:47,550 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-08-04 01:45:51,158 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 01:45:51,160 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 01:46:24,191 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 01:46:24,192 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 01:47:29,966 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 01:47:29,967 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 01:48:12,180 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 01:48:12,180 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 01:48:44,925 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 01:48:44,926 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 01:49:13,171 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 01:49:13,172 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 01:49:53,052 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 01:49:53,053 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 01:50:09,505 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 01:50:09,506 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 02:03:54,322 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 02:03:54,324 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 02:04:01,815 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-04 02:04:02,265 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-04 02:04:04,494 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-04 02:04:06,498 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-08-04 02:04:11,381 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-08-04 02:04:11,382 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-08-04 02:04:11,382 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-08-04 02:07:38,435 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 02:07:38,436 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 02:07:57,279 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 02:07:57,280 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 02:08:03,818 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-04 02:08:04,312 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-04 02:08:06,540 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-04 02:08:08,558 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-08-04 02:08:13,348 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-08-04 02:08:13,348 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-08-04 02:08:13,348 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
