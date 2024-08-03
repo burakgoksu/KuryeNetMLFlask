@@ -31,7 +31,6 @@ class AlertAvailableSessions:
         self.chrome_binary_heroku = "/app/.apt/usr/bin/google-chrome"
         self.webdriver_binary = "D:/chromedriver-win64/chromedriver.exe"
         self.webdriver_binary_heroku = "/app/.chromedriver/bin/chromedriver"
-        self.service = Service(self.webdriver_binary_heroku)
         self.chrome_option = Options()
         if headless:
             self.chrome_option.add_argument("--headless")
