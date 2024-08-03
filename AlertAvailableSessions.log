@@ -191,3 +191,44 @@ dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
 2024-08-03 23:50:22,796 - AlertAvailableSessions - INFO - Available Sessions: []
 2024-08-03 23:50:22,796 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
 2024-08-03 23:50:22,797 - AlertAvailableSessions - WARNING - No sessions available, no email will be sent.
+2024-08-03 23:57:53,212 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-03 23:57:53,213 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-03 23:59:46,322 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-03 23:59:46,322 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 00:00:49,730 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 00:00:49,731 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 00:02:19,670 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 00:02:19,671 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 00:02:25,538 - AlertAvailableSessions - ERROR - Login failed: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+2024-08-04 00:02:46,852 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 00:02:46,853 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 00:05:28,440 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 00:05:28,441 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 00:08:37,481 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 00:08:37,482 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 00:43:05,175 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-04 00:43:05,176 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-04 00:43:15,675 - AlertAvailableSessions - ERROR - Login failed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6628.3)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60378BBD5+29493]
+	(No symbol) [0x00007FF603701BE0]
+	(No symbol) [0x00007FF6035BB02A]
+	(No symbol) [0x00007FF60358FAD5]
+	(No symbol) [0x00007FF60363DF57]
+	(No symbol) [0x00007FF603656D11]
+	(No symbol) [0x00007FF603636193]
+	(No symbol) [0x00007FF6036005BD]
+	(No symbol) [0x00007FF603601731]
+	GetHandleVerifier [0x00007FF603AB004D+3323821]
+	GetHandleVerifier [0x00007FF603AFC183+3635427]
+	GetHandleVerifier [0x00007FF603AF1BE7+3593031]
+	GetHandleVerifier [0x00007FF603847226+797062]
+	(No symbol) [0x00007FF60370C7AF]
+	(No symbol) [0x00007FF603708904]
+	(No symbol) [0x00007FF603708A90]
+	(No symbol) [0x00007FF6036F803F]
+	BaseThreadInitThunk [0x00007FFD993D257D+29]
+	RtlUserThreadStart [0x00007FFD99C6AF28+40]
+
