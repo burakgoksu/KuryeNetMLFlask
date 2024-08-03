@@ -156,3 +156,29 @@ dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
 2024-07-28 16:42:26,894 - AlertAvailableSessions - INFO - Available Sessions: []
 2024-07-28 16:42:26,894 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
 2024-07-28 16:42:26,894 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-08-03 23:15:00,459 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-03 23:15:00,460 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-03 23:15:11,416 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-03 23:15:12,114 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-03 23:15:14,161 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-03 23:15:16,176 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-08-03 23:15:18,466 - AlertAvailableSessions - INFO - Available Sessions: ['\nPazar\n04.08.2024\nHAVUZ\n59 60\nYer Var\n18:30 - 19:30\nErkek\n', '***************']
+2024-08-03 23:15:18,467 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-08-03 23:15:24,239 - AlertAvailableSessions - INFO - Email sent successfully to gogsub58365@gmail.com
+2024-08-03 23:20:02,922 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-03 23:20:02,923 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-03 23:20:10,674 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-03 23:20:12,272 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-03 23:20:14,337 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-03 23:20:16,356 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-08-03 23:20:18,650 - AlertAvailableSessions - INFO - Available Sessions: ['\nPazartesi\n05.08.2024\nHAVUZ\n60 60\nDolu\n12:30 - 13:30\nErkek\nHAVUZ\n59 60\nYer Var\n18:30 - 19:30\nErkek\nHAVUZ\n60 60\nDolu\n20:00 - 21:00\nErkek\n', '***************']
+2024-08-03 23:20:18,651 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-08-03 23:20:24,187 - AlertAvailableSessions - INFO - Email sent successfully to gogsub58365@gmail.com
+2024-08-03 23:20:46,196 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-03 23:20:46,709 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-03 23:20:48,769 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-03 23:20:50,779 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-08-03 23:20:53,122 - AlertAvailableSessions - INFO - Available Sessions: ['\nPazartesi\n05.08.2024\nHAVUZ\n60 60\nDolu\n12:30 - 13:30\nErkek\nHAVUZ\n59 60\nYer Var\n18:30 - 19:30\nErkek\nHAVUZ\n60 60\nDolu\n20:00 - 21:00\nErkek\n', '***************']
+2024-08-03 23:20:53,123 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-08-03 23:20:53,124 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-08-03 23:21:18,682 - AlertAvailableSessions - ERROR - Login failed: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))

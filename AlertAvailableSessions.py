@@ -26,6 +26,9 @@ class AlertAvailableSessions:
             file_handler.setFormatter(formatter)
             self.logger.addHandler(file_handler)
 
+        self.chrome_binary = "D:\chrome-win64\chrome.exe"
+        self.chrome_binary_heroku = "/tmp/build_ef781a6f/.chrome-for-testing/chrome-linux64/chrome"
+        self.webdriver_binary = "D:\chromedriver-win64\chromedriver.exe"
         self.chrome_option = Options()
         if headless:
             self.chrome_option.add_argument("--headless")
@@ -43,7 +46,8 @@ class AlertAvailableSessions:
         self._running = False
 
     def GetSessionInfo(self):
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=self.chrome_option)
+        self.chrome_option.binary_location = self.chrome_binary_heroku
+        driver = webdriver.Chrome(options=self.chrome_option)
         try:
             driver.get(self.link1)
             tc_no = driver.find_element(By.ID, 'txtTCPasaport')
@@ -173,7 +177,7 @@ class AlertAvailableSessions:
         self._running = True
         while self._running:
             self.sessions()
-            time.sleep(300)
+            time.sleep(15)
 
 
     def stop(self):
