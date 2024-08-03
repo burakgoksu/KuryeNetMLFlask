@@ -28,9 +28,9 @@ class AlertAvailableSessions:
             self.logger.addHandler(file_handler)
 
         self.chrome_binary = "D:/chrome-win64/chrome.exe"
-        self.chrome_binary_heroku = "/tmp/build_ef781a6f/.chrome-for-testing/chrome-linux64/chrome"
+        self.chrome_binary_heroku = "/tmp/build_50c1aa2d/.chrome-for-testing/chrome-linux64/chrome"
         self.webdriver_binary = "D:/chromedriver-win64/chromedriver.exe"
-        self.webdriver_binary_heroku = "/tmp/build_548aa65d/.chrome-for-testing/chromedriver-linux64/chromedriver"
+        self.webdriver_binary_heroku = "/tmp/build_50c1aa2d/.chrome-for-testing/chromedriver-linux64/chromedriver"
         self.chrome_option = Options()
         if headless:
             self.chrome_option.add_argument("--headless")
