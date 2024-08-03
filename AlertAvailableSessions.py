@@ -53,7 +53,7 @@ class AlertAvailableSessions:
 
     def GetSessionInfo(self):
         self.chrome_option.binary_location = self.chrome_binary_heroku
-        driver = webdriver.Chrome(executable_path=self.webdriver_binary_heroku, options=self.chrome_option)
+        driver = webdriver.Chrome(options=self.chrome_option)
         try:
             driver.get(self.link1)
             tc_no = driver.find_element(By.ID, 'txtTCPasaport')
