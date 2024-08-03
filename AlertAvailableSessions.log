@@ -182,3 +182,12 @@ dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
 2024-08-03 23:20:53,123 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
 2024-08-03 23:20:53,124 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
 2024-08-03 23:21:18,682 - AlertAvailableSessions - ERROR - Login failed: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+2024-08-03 23:50:09,366 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-03 23:50:09,367 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-03 23:50:15,953 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-03 23:50:16,386 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-03 23:50:18,439 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-03 23:50:20,459 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-08-03 23:50:22,796 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-08-03 23:50:22,796 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-08-03 23:50:22,797 - AlertAvailableSessions - WARNING - No sessions available, no email will be sent.
